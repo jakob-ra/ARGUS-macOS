@@ -1,0 +1,160 @@
+2021-03-03 15:51:30 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: ARGUS)
+2021-03-03 15:51:30 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.6 | packaged by conda-forge | (default, Dec 26 2019, 23:46:52) - [Clang 9.0.0 (tags/RELEASE_900/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-18.7.0-x86_64-i386-64bit
+2021-03-03 15:51:30 [scrapy.crawler] INFO: Overridden settings:
+{'AJAXCRAWL_ENABLED': True,
+ 'BOT_NAME': 'ARGUS',
+ 'COMPRESSION_ENABLED': False,
+ 'CONCURRENT_ITEMS': 200,
+ 'CONCURRENT_REQUESTS': 100,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_MAXSIZE': 10000000,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'LOG_FILE': 'logs/ARGUS/dualspider/f78124667c1a11ebaf3134363b7bab66.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ARGUS.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 30,
+ 'RETRY_ENABLED': False,
+ 'SPIDER_MODULES': ['ARGUS.spiders']}
+2021-03-03 15:51:30 [scrapy.extensions.telnet] INFO: Telnet Password: a13d702f57717996
+2021-03-03 15:51:30 [py.warnings] WARNING: /Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/extensions/feedexport.py:210: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2021-03-03 15:51:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2021-03-03 15:51:30 [scrapy_fake_useragent.middleware] INFO: Using '<class 'scrapy_fake_useragent.providers.FakeUserAgentProvider'>' as the User-Agent provider
+2021-03-03 15:51:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-03-03 15:51:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-03-03 15:51:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['ARGUS.pipelines.DualPipeline']
+2021-03-03 15:51:31 [scrapy.core.engine] INFO: Spider opened
+2021-03-03 15:51:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-03-03 15:51:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2021-03-03 15:51:34 [filelock] INFO: Lock 4679323728 acquired on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2021-03-03 15:51:34 [filelock] INFO: Lock 4678989904 acquired on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2021-03-03 15:51:34 [filelock] INFO: Lock 4678989904 released on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2021-03-03 15:51:34 [filelock] INFO: Lock 4679323728 released on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2021-03-03 15:51:36 [py.warnings] WARNING: /Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/core/scraper.py:153: UserWarning: The "DualSpider.processURLstack" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, request.errback)
+
+2021-03-03 15:51:51 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method FeedExporter.item_scraped of <scrapy.extensions.feedexport.FeedExporter object at 0x115d61750>>
+Traceback (most recent call last):
+  File "/Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/utils/defer.py", line 161, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/extensions/feedexport.py", line 291, in item_scraped
+    slot.exporter.export_item(item)
+  File "/Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/exporters.py", line 91, in export_item
+    itemdict = dict(self._get_serialized_fields(item))
+  File "/Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/exporters.py", line 65, in _get_serialized_fields
+    field_iter = item.keys()
+AttributeError: 'NoneType' object has no attribute 'keys'
+2021-03-03 15:52:31 [scrapy.extensions.logstats] INFO: Crawled 46 pages (at 46 pages/min), scraped 1 items (at 1 items/min)
+2021-03-03 15:53:31 [scrapy.extensions.logstats] INFO: Crawled 83 pages (at 37 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 15:54:32 [scrapy.extensions.logstats] INFO: Crawled 116 pages (at 33 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 15:55:31 [scrapy.extensions.logstats] INFO: Crawled 142 pages (at 26 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 15:56:32 [scrapy.extensions.logstats] INFO: Crawled 167 pages (at 25 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 15:57:32 [scrapy.extensions.logstats] INFO: Crawled 186 pages (at 19 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 15:58:32 [scrapy.extensions.logstats] INFO: Crawled 205 pages (at 19 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 15:59:32 [scrapy.extensions.logstats] INFO: Crawled 223 pages (at 18 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:00:32 [scrapy.extensions.logstats] INFO: Crawled 240 pages (at 17 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:01:31 [scrapy.extensions.logstats] INFO: Crawled 254 pages (at 14 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:02:33 [scrapy.extensions.logstats] INFO: Crawled 269 pages (at 15 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:03:35 [scrapy.extensions.logstats] INFO: Crawled 283 pages (at 14 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:04:36 [scrapy.extensions.logstats] INFO: Crawled 296 pages (at 13 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:05:35 [scrapy.extensions.logstats] INFO: Crawled 308 pages (at 12 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:06:34 [scrapy.extensions.logstats] INFO: Crawled 320 pages (at 12 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:07:35 [scrapy.extensions.logstats] INFO: Crawled 332 pages (at 12 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:08:31 [scrapy.extensions.logstats] INFO: Crawled 344 pages (at 12 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:09:31 [scrapy.extensions.logstats] INFO: Crawled 353 pages (at 9 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:10:31 [scrapy.extensions.logstats] INFO: Crawled 361 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:11:33 [scrapy.extensions.logstats] INFO: Crawled 369 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:12:33 [scrapy.extensions.logstats] INFO: Crawled 377 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:13:40 [scrapy.extensions.logstats] INFO: Crawled 385 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:14:31 [scrapy.extensions.logstats] INFO: Crawled 392 pages (at 7 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:15:35 [scrapy.extensions.logstats] INFO: Crawled 399 pages (at 7 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:16:34 [scrapy.extensions.logstats] INFO: Crawled 407 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:17:31 [scrapy.extensions.logstats] INFO: Crawled 414 pages (at 7 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:18:37 [scrapy.extensions.logstats] INFO: Crawled 422 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:19:31 [scrapy.extensions.logstats] INFO: Crawled 428 pages (at 6 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:20:32 [scrapy.extensions.logstats] INFO: Crawled 436 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:21:47 [scrapy.extensions.logstats] INFO: Crawled 444 pages (at 8 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:22:32 [scrapy.extensions.logstats] INFO: Crawled 448 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:23:35 [scrapy.extensions.logstats] INFO: Crawled 454 pages (at 6 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:24:36 [scrapy.extensions.logstats] INFO: Crawled 460 pages (at 6 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:25:55 [scrapy.extensions.logstats] INFO: Crawled 466 pages (at 6 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:26:36 [scrapy.extensions.logstats] INFO: Crawled 469 pages (at 3 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:27:31 [scrapy.extensions.logstats] INFO: Crawled 471 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:28:33 [scrapy.extensions.logstats] INFO: Crawled 473 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:29:37 [scrapy.extensions.logstats] INFO: Crawled 475 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:30:33 [scrapy.extensions.logstats] INFO: Crawled 477 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:31:52 [scrapy.extensions.logstats] INFO: Crawled 479 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:32:39 [scrapy.extensions.logstats] INFO: Crawled 480 pages (at 1 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:33:40 [scrapy.extensions.logstats] INFO: Crawled 482 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:34:34 [scrapy.extensions.logstats] INFO: Crawled 484 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:35:33 [scrapy.extensions.logstats] INFO: Crawled 486 pages (at 2 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:36:34 [scrapy.extensions.logstats] INFO: Crawled 490 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:37:33 [scrapy.extensions.logstats] INFO: Crawled 494 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:38:33 [scrapy.extensions.logstats] INFO: Crawled 498 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:39:31 [scrapy.extensions.logstats] INFO: Crawled 501 pages (at 3 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:40:35 [scrapy.extensions.logstats] INFO: Crawled 506 pages (at 5 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:41:31 [scrapy.extensions.logstats] INFO: Crawled 510 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:42:37 [scrapy.extensions.logstats] INFO: Crawled 516 pages (at 6 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:43:33 [scrapy.extensions.logstats] INFO: Crawled 521 pages (at 5 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:44:50 [scrapy.extensions.logstats] INFO: Crawled 526 pages (at 5 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:45:48 [scrapy.extensions.logstats] INFO: Crawled 530 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:46:37 [scrapy.extensions.logstats] INFO: Crawled 534 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:47:39 [scrapy.extensions.logstats] INFO: Crawled 538 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:48:36 [scrapy.extensions.logstats] INFO: Crawled 541 pages (at 3 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:49:31 [scrapy.extensions.logstats] INFO: Crawled 546 pages (at 5 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:50:33 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2021-03-03 16:50:35 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-03-03 16:50:36 [scrapy.extensions.logstats] INFO: Crawled 550 pages (at 4 pages/min), scraped 1 items (at 0 items/min)
+2021-03-03 16:50:48 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 29,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 28,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 1,
+ 'downloader/request_bytes': 202494,
+ 'downloader/request_count': 586,
+ 'downloader/request_method_count/GET': 586,
+ 'downloader/response_bytes': 74985455,
+ 'downloader/response_count': 557,
+ 'downloader/response_status_count/200': 402,
+ 'downloader/response_status_count/301': 15,
+ 'downloader/response_status_count/302': 138,
+ 'downloader/response_status_count/404': 2,
+ 'elapsed_time_seconds': 3557.935247,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2021, 3, 3, 13, 20, 48, 966266),
+ 'item_scraped_count': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 75,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 462237696,
+ 'memusage/startup': 102502400,
+ 'request_depth_max': 257,
+ 'response_received_count': 551,
+ 'scheduler/dequeued': 586,
+ 'scheduler/dequeued/memory': 586,
+ 'scheduler/enqueued': 588,
+ 'scheduler/enqueued/memory': 588,
+ 'start_time': datetime.datetime(2021, 3, 3, 12, 21, 31, 31019)}
+2021-03-03 16:50:48 [scrapy.core.engine] INFO: Spider closed (shutdown)

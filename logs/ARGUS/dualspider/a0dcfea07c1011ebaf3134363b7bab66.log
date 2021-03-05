@@ -1,0 +1,83 @@
+2021-03-03 14:37:29 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: ARGUS)
+2021-03-03 14:37:29 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.6 | packaged by conda-forge | (default, Dec 26 2019, 23:46:52) - [Clang 9.0.0 (tags/RELEASE_900/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-18.7.0-x86_64-i386-64bit
+2021-03-03 14:37:29 [scrapy.crawler] INFO: Overridden settings:
+{'AJAXCRAWL_ENABLED': True,
+ 'BOT_NAME': 'ARGUS',
+ 'COMPRESSION_ENABLED': False,
+ 'CONCURRENT_ITEMS': 200,
+ 'CONCURRENT_REQUESTS': 100,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_MAXSIZE': 10000000,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'LOG_FILE': 'logs/ARGUS/dualspider/a0dcfea07c1011ebaf3134363b7bab66.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ARGUS.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 30,
+ 'RETRY_ENABLED': False,
+ 'SPIDER_MODULES': ['ARGUS.spiders']}
+2021-03-03 14:37:29 [scrapy.extensions.telnet] INFO: Telnet Password: c7c013edf7d3474d
+2021-03-03 14:37:29 [py.warnings] WARNING: /Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/extensions/feedexport.py:210: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2021-03-03 14:37:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2021-03-03 14:37:30 [scrapy_fake_useragent.middleware] INFO: Using '<class 'scrapy_fake_useragent.providers.FakeUserAgentProvider'>' as the User-Agent provider
+2021-03-03 14:37:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-03-03 14:37:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-03-03 14:37:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['ARGUS.pipelines.DualPipeline']
+2021-03-03 14:37:30 [scrapy.core.engine] INFO: Spider opened
+2021-03-03 14:37:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-03-03 14:37:30 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2021-03-03 14:37:40 [filelock] INFO: Lock 4793288464 acquired on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2021-03-03 14:37:40 [filelock] INFO: Lock 4792856016 acquired on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2021-03-03 14:37:40 [filelock] INFO: Lock 4792856016 released on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2021-03-03 14:37:40 [filelock] INFO: Lock 4793288464 released on /Users/parnianshahkar/.cache/python-tldextract/3.7.6.final__miniconda3__c4b0bd__tldextract-3.1.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2021-03-03 14:37:44 [py.warnings] WARNING: /Users/parnianshahkar/Downloads/miniconda3/lib/python3.7/site-packages/scrapy/core/scraper.py:153: UserWarning: The "DualSpider.processURLstack" method is a generator and includes a "return" statement with a value different than None. This could lead to unexpected behaviour. Please see https://docs.python.org/3/reference/simple_stmts.html#the-return-statement for details about the semantics of the "return" statement within generators
+  warn_on_generator_with_return_value(spider, request.errback)
+
+2021-03-03 14:37:54 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2021-03-03 14:37:54 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-03-03 14:38:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 6969,
+ 'downloader/request_count': 22,
+ 'downloader/request_method_count/GET': 22,
+ 'downloader/response_bytes': 7981016,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 14,
+ 'downloader/response_status_count/301': 7,
+ 'elapsed_time_seconds': 42.26165,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2021, 3, 3, 11, 8, 12, 526121),
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 108589056,
+ 'memusage/startup': 108589056,
+ 'request_depth_max': 9,
+ 'response_received_count': 15,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2021, 3, 3, 11, 7, 30, 264471)}
+2021-03-03 14:38:12 [scrapy.core.engine] INFO: Spider closed (shutdown)
