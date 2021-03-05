@@ -10,7 +10,7 @@ import subprocess
 import os
 import webbrowser
 
-script_dir = os.path.dirname(__file__)
+script_dir = os.path.dirname(os.path.abspath(__file__))
 script_dir_edit = str(script_dir)[:-4] 
 
 def start_crawl(scraping_type):

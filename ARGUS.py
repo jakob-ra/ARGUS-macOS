@@ -29,13 +29,6 @@ from io import BytesIO
 import pandas as pd
 import os, sys, subprocess
 
-def open_file(filename):
-    if sys.platform == "win32":
-        os.startfile(filename)
-    else:
-        opener ="open" if sys.platform == "darwin" else "xdg-open"
-        subprocess.call([opener, filename])
-
 global show_filename
 show_filename = "Select file"
 columns = [None]
@@ -60,7 +53,7 @@ print("""
 Browse for text file containing your URLs...""")
 
 # get path to script
-script_dir = os.path.dirname(__file__)  ###
+script_dir = os.path.dirname(os.path.abspath(__file__))  ###
 
 
 # import necessary modules
@@ -290,7 +283,6 @@ e10.insert(tk.END, "None")  # set default option
 tkvar10 = tk.StringVar(master)
 tkvar10.set("Select")
 
-script_dir = "/Users/parnianshahkar/Documents/KOF/Task2/ARGUS-main"
 print(script_dir + r"/misc/ISO_language_codes.txt")
 languages = pd.read_csv(script_dir + r"/misc/ISO_language_codes.txt", sep="\t", encoding="utf-8", engine="python")
 languages = languages["language"].values.tolist()
@@ -443,9 +435,6 @@ def start_scraping():
     scrapyd_txt.write(scrapyd_file.format(e6.get()))
     scrapyd_txt.close()
     time.sleep(2)
-    # os.system(script_dir + r"/bin/start_init.bash") ###### .bat is for windows
-    # os.system(script_dir + r"/bin/start_server.bash") ###### .bat is for windows
-    # os.system("scrapyd")
     # os.system("start /B start cmd.exe @cmd /k scrapyd")    # ### Write scrapyd in terminal
     time.sleep(2)
     scraping_type = "normal"
@@ -605,7 +594,8 @@ tk.Button(master, text='Aggregate Webpage Texts', command=start_aggregator, font
 
 # initiate post-processing to produce csv-file
 def post_process():
-	open_file("postprocessing.bat")
+	print('not implemented')
+	# open_file("postprocessing.bat")
 
 
 

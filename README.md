@@ -20,7 +20,8 @@ Follow these easy steps, which are described in more detail below, to make a suc
 2.  Install additional Python packages (see Prerequisites below).
 3.  Install cURL and add a cURL environment variable to your system (see below).
 4.  Download and extract the ARGUS files.
-5.  Start scraping via ARGUS.exe or the ARGUS_noGUI.py file.
+5.  Open terminal, navigate to the ARGUS folder and type 'scrapyd'
+5.  Start scraping by running ARGUS.py or ARGUS_noGUI.py
 6.  Check the scraping process using the web interface and wait until it is finished.
 7.  Run postprocessing from ARGUS.exe.
 

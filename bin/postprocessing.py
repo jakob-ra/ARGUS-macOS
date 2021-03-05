@@ -13,7 +13,7 @@ import shutil
 import datetime
 
 start_time=time.time()
-script_dir = os.path.dirname(__file__)  ###
+script_dir = os.path.dirname(os.path.abspath(__file__))  ###
 script_dir_edit = str(script_dir)[:-4] 
 
 def postprocessing(cwd=None):

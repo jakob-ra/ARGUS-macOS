@@ -12,7 +12,7 @@ import datetime
 import os
 import re
 
-script_dir = os.path.dirname(__file__)  ###
+script_dir = os.path.dirname(os.path.abspath(__file__))  ###
 script_dir_edit = str(script_dir)[:-6] 
 
 class TextPipeline(object):

@@ -1,0 +1,52 @@
+2021-03-05 14:27:31 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: ARGUS)
+2021-03-05 14:27:31 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.6 (default, Jan  8 2020, 20:23:39) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1i  8 Dec 2020), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2021-03-05 14:27:31 [scrapy.crawler] INFO: Overridden settings:
+{'AJAXCRAWL_ENABLED': True,
+ 'BOT_NAME': 'ARGUS',
+ 'COMPRESSION_ENABLED': False,
+ 'CONCURRENT_ITEMS': 200,
+ 'CONCURRENT_REQUESTS': 100,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_MAXSIZE': 10000000,
+ 'DOWNLOAD_TIMEOUT': 20,
+ 'LOG_FILE': 'logs\\ARGUS\\dualspider\\89096cf67db611ebbccc185680177e32.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'ARGUS.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 30,
+ 'RETRY_ENABLED': False,
+ 'SPIDER_MODULES': ['ARGUS.spiders']}
+2021-03-05 14:27:31 [scrapy.extensions.telnet] INFO: Telnet Password: b05cb94a330c2903
+2021-03-05 14:27:31 [py.warnings] WARNING: c:\users\jakob\anaconda3\lib\site-packages\scrapy\extensions\feedexport.py:210: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2021-03-05 14:27:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2021-03-05 14:27:31 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-03-05 14:27:31 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "c:\users\jakob\anaconda3\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\jakob\anaconda3\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "c:\users\jakob\anaconda3\lib\site-packages\scrapy\crawler.py", line 98, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "c:\users\jakob\anaconda3\lib\site-packages\scrapy\spiders\__init__.py", line 49, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "C:\Users\Jakob\Downloads\ARGUS-main (3)\ARGUS-main\ARGUS\spiders\dualspider.py", line 39, in __init__
+    data = pd.read_csv(url_chunk, delimiter="\t", encoding="utf-8", error_bad_lines=False, engine="python")
+  File "c:\users\jakob\anaconda3\lib\site-packages\pandas\io\parsers.py", line 676, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "c:\users\jakob\anaconda3\lib\site-packages\pandas\io\parsers.py", line 448, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "c:\users\jakob\anaconda3\lib\site-packages\pandas\io\parsers.py", line 880, in __init__
+    self._make_engine(self.engine)
+  File "c:\users\jakob\anaconda3\lib\site-packages\pandas\io\parsers.py", line 1126, in _make_engine
+    self._engine = klass(self.f, **self.options)
+  File "c:\users\jakob\anaconda3\lib\site-packages\pandas\io\parsers.py", line 2269, in __init__
+    memory_map=self.memory_map,
+  File "c:\users\jakob\anaconda3\lib\site-packages\pandas\io\common.py", line 428, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Jakob\\Downloads\\ARGUS-main'
