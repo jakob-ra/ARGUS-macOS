@@ -1,3 +1,5 @@
+Credit to Jan Kinne, original repository at https://github.com/datawizard1337/ARGUS.
+
 # ARGUS: **A**utomated **R**obot for **G**eneric **U**niversal **S**craping
 
 <p align="center">
